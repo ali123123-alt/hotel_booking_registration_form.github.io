@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hotel Booking Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Hotel Booking Registration Form</h2>
+        <form id="booking-form">
+            <h3>Customer Info</h3>
+            <label for="customer-name">Customer Name:</label>
+            <input type="text" id="customer-name" required>
+
+            <label for="check-in-date">Check-in Date:</label>
+            <input type="date" id="check-in-date" required>
+
+            <label for="total-days">Total No of Days:</label>
+            <input type="number" id="total-days" required>
+
+            <label for="total-persons">Total No of Persons:</label>
+            <input type="number" id="total-persons" required>
+
+            <h3>Room Information</h3>
+            <label for="room-type">Room Type:</label>
+            <select id="room-type">
+                <option value="Delux Room">Delux Room</option>
+                <option value="Suite Room">Suite Room</option>
+            </select>
+
+            <label for="amenities">Amenities:</label>
+            <select id="amenities" multiple>
+                <option value="AC">AC</option>
+                <option value="Locker">Locker</option>
+            </select>
+
+            <h3>Advance Payment</h3>
+            <label for="advance-amount">Advance Amount:</label>
+            <input type="number" id="advance-amount" required>
+
+            <h3>Balance Amount</h3>
+            <p>Balance: <span id="balance">0</span></p>
+
+            <h3>Total Cost Calculation</h3>
+            <p>Total Room Cost: <span id="total-room-cost">0</span></p>
+            <p>Total Amenities Cost: <span id="total-amenities-cost">0</span></p>
+
+            <h3>Total Cost</h3>
+            <p>Total Cost: <span id="total-cost">0</span></p>
+
+            <h3>Additional Charges</h3>
+            <p>Upto 2 People: No Change in Cost</p>
+            <p>Per Day Cost for Extra Person: 1000/-</p>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
